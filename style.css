@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+
+canvas{
+    /* border: 1px solid black; */
+    background: whitesmoke;
+    /* image-rendering: pixelated; */
+
+    box-shadow: 0 4px 6px -2px black;
+}
+
+body, .wrapper, .flex{
+    display: flex;
+}
+
+body, .wrapper, .flex-column{
+    flex-direction: column;
+}
+/* 
+html, body{
+    padding: auto;
+    margin: auto;
+    transform: translate(25%, 25%);
+    height: 100vh;
+    width: 100vw; 
+} */
+
+@keyframes gradient{
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+:root {
+    --col-1: 49, 51, 70;
+    --col-2: 32, 112, 187;
+    --col-3: 33, 172, 182;
+    --col-4: 20, 22, 95;
+}
+  
+
+
+body{
+    max-height: 100vh;
+    min-height: 100vh;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    /* background: rgb(145, 215, 255); */
+    background: 
+    linear-gradient(
+        315deg, 
+        rgb(var(--col-1)) 3%,
+        rgb(var(--col-2)) 38%,
+        rgb(var(--col-3)) 68%,
+        rgb(var(--col-4)) 98%
+    );
+    background-size: 500% 300%;
+    background-attachment: fixed;
+    animation: gradient 40s cubic-bezier(0.39, 0.575, 0.565, 1) infinite;
+    /* background:hsla(0, 0%, 0%, 1); */
+    /* background-image: linear-gradient(to right top, hsla(0, 5%,5%, 0.5), hsla(0, 0%, 15%,1)); */
+    /* background-image:-moz-linear-gradient(to right top, hsla(0, 5%,5%, 0.5), hsla(0, 0%, 15%,1)); */
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+}
+
+.wrapper{
+    align-items: center;
+}
+.wrapper>*{
+    align-content: center;
+}
+
+.confirmation{
+    max-height: 260px;
+    gap: 10px;
+}
+.confirmation>*{
+    font-size: 45px;
+    align-self: stretch;
+}
+
+.main-form{
+    border-radius: 2rem;
+    border: 1px rgb(72, 99, 139) solid;
+    background: rgb(76, 153, 197);
+    min-width: 760px;
+    padding: 25px;
+}
+
+main.wrapper{
+    max-height: 780px;
+    overflow: hidden;
+}
+
+.title{
+    color: white;
+    font-size: 60px;
+    text-shadow: 3px 2px black;
+}
+
+.quote{
+    color: white;
+    font-size: 45px;
+    text-shadow: 3px 2px black;
+    
+}
+
+.word{
+    margin: 10px 0;
+
+    color: white;
+    font-size: 50px;
+    text-shadow: 3px 2px black;
+}
+
+.word-bad{
+    color: rgb(233, 69, 69)
+}
+
+.word-good{
+    color: rgb(37, 158, 33)
+}

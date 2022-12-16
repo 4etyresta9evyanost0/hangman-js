@@ -1,0 +1,61 @@
+.keyboard {
+  width: 720px;
+
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  user-select: none;
+}
+
+.row>button{
+  border-width: 1px;
+  border-color: rgb(85, 85, 85);
+  border-style: solid;
+  background-color: rgb(232, 236, 241);
+  box-shadow: 0 1px 6px -2px black;
+
+  width: 54px;
+  height: 54px; 
+
+  border-radius: 0.4rem;  
+  cursor: pointer;
+
+  font-size: 35px;
+  font-family: 'Source Code Pro';
+
+  /* transition:  240ms ease-in-out; */
+  transition: color 500ms, background 240ms ease-in-out;
+}
+
+.row>button:hover, .row>button.checked{
+  background-color: rgb(56, 56, 56);
+  color: white;
+
+  /* transition:  500ms ease-in-out; */
+  transition: color 500ms, background 500ms ease-in-out;
+}
+
+.row>button.checked{
+  /* background-color: rgb(56, 15, 15);
+  color: rgb(224, 204, 204); */
+
+  cursor: auto;
+}
+
+/* 
+Моя клава
+.first-row {
+  margin-left: 50px;
+}
+
+.second-row {
+  margin-left: 67px;
+}
+
+.third-row {
+  margin-left: 85px;
+} */
+

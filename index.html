@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link rel="shortcut icon" href="favic.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="keyboard.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="words.js"></script>
+    <title>Игра "Виселица"</title>
+</head>
+
+<body>
+    <div class="wrapper main-form">
+        <h1 class="title">Игра "Виселица"</h1>
+        <div class="confirmation wrapper">
+            <input type="text" class="word-input">
+            <button id="guessButton">Задать слово</button>
+            <button id="rndButton">Мне повезёт!</button>
+            <p id="errorText"></p>
+        </div>
+        <main class="wrapper">
+
+            <canvas id="canv"></canvas>
+            <div class="word">
+            
+            </div>
+            
+            <div class="keyboard">
+                <div class="first-row row">
+                    <button>Й</button>
+                    <button>Ц</button>
+                    <button>У</button>
+                    <button>К</button>
+                    <button>Е</button>
+                    <button>Н</button>
+                    <button>Г</button>
+                    <button>Ш</button>
+                    <button>Щ</button>
+                    <button>З</button>
+                    <button>Х</button>
+                    <button>Ъ</button>
+                </div>
+                <div class="second-row row">
+                    <button>Ф</button>
+                    <button>Ы</button>
+                    <button>В</button>
+                    <button>А</button>
+                    <button>П</button>
+                    <button>Р</button>
+                    <button>О</button>
+                    <button>Л</button>
+                    <button>Д</button>
+                    <button>Ж</button>
+                    <button>Э</button>
+                </div>
+                <div class="third-row row">
+                    <button>Я</button>
+                    <button>Ч</button>
+                    <button>С</button>
+                    <button>М</button>
+                    <button>И</button>
+                    <button>Т</button>
+                    <button>Ь</button>
+                    <button>Б</button>
+                    <button>Ю</button>
+                    <button>-</button>
+                </div>
+            </div>
+            <script src="check-button.js"></script>
+        </main>
+        <p class="quote">Чем больше тем меньше</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
